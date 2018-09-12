@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web Visualization Dashboard</title>
+    <link rel="stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href = "style.css">
+    <style>
+        body {background-color:rgb(226, 225, 225)}
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Lattitude</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="maxtemp.html">Max Temperature</a></li>
+                        <li><a href="humidity.html">Humidity</a></li>
+                        <li><a href="cloudiness.html">Cloudiness</a></li>
+                        <li><a href="windspeed.html">Wind Speed</a></li>
+                    </ul>
+                </li>
+                <li><a href="comparison.html">Comparison</a></li>
+                <li><a href="data.html">Data</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <br>
+        <div class="container">        
+            <div class="row">
+                <div class="col-lg-8 col-sm-12">
+                <h1>Max Temperature</h1>
+                <hr>
+                <img src="Temp_Latitude.png" alt="Latitude vs. Max Temperature" height="400" width="600" align="center">
+                <p>It looks like there is a correlation between latitude and temperature. Latitude is the distance of a 
+                   place from earth's equator so the max and min of latitude represents the arctic cirlce and antarctic 
+                   cirlce. The graph shows that the temperature is the lowest around the min and max of latitude which 
+                   makes sense because they are the arctic and antarctic areas. The temperature is the highest around 
+                   the equator (lat=0) which makes sense because the weather around the equator is very tropical.
+                </p>
+                </div>
+
+                <div class="col-md-4 col-sm-12">
+                <h2>Visualizations</h2>
+                <hr>
+                    <div class= "col-md-6 col-sm-3">
+                        <img class ="boxx" id = "pic1" src="Temp_Latitude.png" alt="Latitude vs. Max Temperature" height="150" width="150"> 
+                    </div> 
+                    <div class= "col-md-6 col-sm-3">
+                        <img id ="pic2" src="Humidity_Latitude.png" alt="Latitude vs. Humidity" height="150" width="150">
+                    </div> 
+                    <div class= "col-md-6 col-sm-3">
+                        <img id = "pic3" src="Cloudiness_Latitude.png" alt="Latitude vs. Cloudiness" height="150" width="150">
+                    </div> 
+                    <div class= "col-md-6 col-sm-3">
+                        <img id = "pic4" src="Wind_Speed_Latitude.png" alt="Latitude vs. Wind Speed" height="150" width="150">
+                    </div> 
+                </div>
+            </div>
+        </div>
+</body>
+</html>
